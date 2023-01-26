@@ -14,8 +14,9 @@ public  class Customer  {
     private String password;
 
     @OneToMany(mappedBy = "customer",cascade = CascadeType.ALL)
-    @JoinColumn
     List<TripBooking> tripBookingList;
+
+
 
     public int getCustomerId() {
         return customerId;

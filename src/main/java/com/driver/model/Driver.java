@@ -21,6 +21,7 @@ public class Driver {
      @OneToMany(mappedBy = "driver",cascade = CascadeType.ALL)
      List<TripBooking> tripBookingList;
 
+
     public Cab getCab() {
         return cab;
     }
