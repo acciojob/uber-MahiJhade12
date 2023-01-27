@@ -21,6 +21,16 @@ public class Driver {
      @OneToMany(mappedBy = "driver",cascade = CascadeType.ALL)
      List<TripBooking> tripBookingList;
 
+    public Driver(String mobileNo, String password) {
+        this.mobileNo=mobileNo;
+        this.password=password;
+
+    }
+
+    public Driver() {
+
+    }
+
 
     public Cab getCab() {
         return cab;
