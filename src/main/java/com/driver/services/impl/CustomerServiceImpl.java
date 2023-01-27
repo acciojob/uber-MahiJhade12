@@ -59,7 +59,7 @@ public class CustomerServiceImpl implements CustomerService {
 		}
 
 		if(bookdriver==null){
-			throw new Exception("No cab available!");
+			throw new Exception("No value present");
 		}
 
 		Customer customer= customerRepository2.findById(customerId).get();
